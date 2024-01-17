@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+:root {
+  --clr-primary-orange: hsl(25, 97%, 53%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-lightgrey: hsl(217, 12%, 63%);
+  --clr-neutral-mediumGrey: hsla(215, 10%, 47%, 0.204);
+  --clr-neutral-darkBlue: hsl(213, 19%, 18%);
+  --clr-neutral-VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--clr-neutral-VeryDarkBlue);
+	position: relative;
+}
+
+.card{
+width: 25rem;
+height: 25rem;
+border-radius: 2rem;
+padding: 2rem;
+background-color: var(--clr-neutral-darkBlue);
+color: var(--clr-neutral-white);
+display: flex;
+flex-direction: column;
+gap: 1.3rem;
+}
+
+.star{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-neutral-mediumGrey);
+  width: 2.9rem;
+  height: 2.9rem;
+	border-radius: 50rem;
+}
+
+
+
+p{
+	color: var(--clr-neutral-lightgrey);
+}
+
+
+ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+li{
+	color:var(--clr-neutral-lightgrey) ;
+	background-color: var(--clr-neutral-mediumGrey);
+	border-radius: 50rem;
+	width: 2.9rem;
+	height: 2.9rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+li:hover{
+background-color: hsl(215, 10%, 47%);
+}
+
+button{
+	width: 19rem;
+	height: 2.5rem;
+	border-radius: 3rem;
+	border: none;
+	background-color: var(--clr-primary-orange);
+	color: var(--clr-neutral-white);
+	align-self: center;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: var(--clr-neutral-white);
+	color: var(--clr-primary-orange);
+}
+
+.two{
+	position: absolute;
+	bottom: 17.55rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.selected{
+	background-color:var(--clr-neutral-mediumGrey);
+	color: var(--clr-primary-orange);
+	width: 12rem;
+	height: 2rem;
+	border-radius: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hidden{
+	display: none;
+}
+
+
+.x{
+position: absolute;
+top: 2rem;
+left: 2rem;
+font-weight: 700;
+font-size: 1.2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--clr-neutral-mediumGrey);
+width: 2.9rem;
+height: 2.8rem;
+border-radius: 50rem;
+cursor: pointer;
+}
